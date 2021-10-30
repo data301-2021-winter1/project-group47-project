@@ -15,7 +15,7 @@ We hope to be able to better interpet and appreciate the statistics of the MLS. 
 ## Team Members
 
 - Alex Green: Recently retired UBCO Women's Soccer player in my 5th year as a computer science major.
-- Napatr Sansaneeyawet: one sentence about you!
+- Napatr Sansaneeyawet: From Thailand and loves to play soccer. Currently in 2nd year as a computer science major.
 
 
 
