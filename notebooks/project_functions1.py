@@ -1,4 +1,11 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pylab as plt
+import seaborn as sns
+
 def load_and_process_goals(df):
+    find_and_delete_duplicates(df)
+    df = pd.read_csv(df)
     season_games_min = 30
     threshold = len(df) * .40
     df = (df.dropna(thresh=threshold, axis=1)
@@ -12,8 +19,9 @@ def load_and_process_goals(df):
 
 
 def load_and_process_players(df):
-    years = [2000, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
-             2014, 2015, 2016, 2017, 2018, 2019]
+    find_and_delete_duplicates(df)
+    df = pd.read_csv(df)
+    years = [2000, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
     df = df[['Player', 'Club', 'G', 'SHTS', 'SOG', 'SOG%', 'Year']]
     df1 = df[df.Year.isin(years) == True]
     df2 = (df1.sort_values(by=['Player', 'Year'], ascending=[True, True])
@@ -23,7 +31,7 @@ def load_and_process_players(df):
 
 
 def find_and_delete_duplicates(csv):
-    csv =
+    csv = pd.read_csv(csv)
     if len(csv[csv.duplicated()]) > 0:
         print("No. of duplicated entries: ", len(csv[csv.duplicated()]))
         print(csv[csv.duplicated(keep=False)].sort_values(
