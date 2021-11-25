@@ -31,7 +31,7 @@ def load_and_process_players(df):
              2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019]
     df = df[['Player', 'Club', 'G', 'SHTS', 'SOG', 'SOG%', 'Year']]
     df1 = df[df.Year.isin(years) == True]
-    df2 = (df1.replace(['ATL','VAN','CHI','CIN','CHV','CLB','TB ','DAL','COL','HOU','POR','NYC', 'ORL', 'TOR', 'MTL', 'NSH', 'MIN', 'PHI', 'SEA', 'RSL'],['Atlanta United FC','Vancouver Whitecaps FC', 'Chicago Fire', 'FC Cincinnati','Chivas USA','Columbus Crew', 'Tampa Bay Mutiny', 'FC Dallas','Colorado Rapids','Houston Dynamo','Portland Timbers','New York City FC', 'Orlando City SC', 'Toronto FC', 'Montreal Impact', 'Nashville SC', 'Minnesota United FC', 'Philadelphia Union', 'Seattle Sounders FC', 'Real Salt Lake'])
+    df2 = (df1.replace(['ATL','VAN','CHI','CIN','CHV','CLB','TB ','DAL','COL','HOU','POR','NYC', 'ORL', 'TOR', 'MTL', 'NSH', 'MIN', 'PHI', 'SEA', 'RSL','LAFC'],['Atlanta United FC','Vancouver Whitecaps FC', 'Chicago Fire', 'FC Cincinnati','Chivas USA','Columbus Crew', 'Tampa Bay Mutiny', 'FC Dallas','Colorado Rapids','Houston Dynamo','Portland Timbers','New York City FC', 'Orlando City SC', 'Toronto FC', 'Montreal Impact', 'Nashville SC', 'Minnesota United FC', 'Philadelphia Union', 'Seattle Sounders FC', 'Real Salt Lake', 'Los Angeles FC'])
            .replace(['NYC'],'New York City FC')
            .replace(['NYR', 'RBNY', 'MET', 'NY', 'NY ', 'MetroStars'],'New York Red Bulls')
            .replace(['DC', 'DC '],'D.C. United')
@@ -39,7 +39,6 @@ def load_and_process_players(df):
            .replace(['SKC', 'KC '],'Sporting Kansas City')
            .replace(['SJ', 'SJ '],'San Jose Earthquakes')
            .replace(['LA', 'LA '],'LA Galaxy')
-           .replace(['LAFC', 'LFC'],'Los Angeles FC')
           )
     df3 = df2[df2.Club.isin(values) == False]
     df4 = (df3.sort_values(by=['Player', 'Year'], ascending=[True, True])
