@@ -1,0 +1,1056 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.1018.0949                               -->
+<workbook source-build='2021.3.3 (20213.21.1018.0949)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='processed_ap.csv+ (Multiple Connections)' inline='true' name='federated.0kzrldc0ippd4m19wlc1s0dvb7zt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='processed_ap' name='textscan.089u50u1he3j4l17vbuz80xvn2dl'>
+            <connection class='textscan' directory='C:/Users/crazy/Downloads/DATA301/project-group47-project/data/processed' filename='processed_ap.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='processed_at' name='textscan.1aler1x01eku7w13dcafe10lfmwe'>
+            <connection class='textscan' directory='C:/Users/crazy/Downloads/DATA301/project-group47-project/data/processed' filename='processed_at.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.089u50u1he3j4l17vbuz80xvn2dl' name='processed_ap.csv' table='[processed_ap#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='Club' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='SHTS' ordinal='2' />
+            <column datatype='integer' name='SOG' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.089u50u1he3j4l17vbuz80xvn2dl' name='processed_ap.csv' table='[processed_ap#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='string' name='Club' ordinal='0' />
+              <column datatype='integer' name='Year' ordinal='1' />
+              <column datatype='integer' name='SHTS' ordinal='2' />
+              <column datatype='integer' name='SOG' ordinal='3' />
+            </columns>
+          </relation>
+          <relation connection='textscan.1aler1x01eku7w13dcafe10lfmwe' name='processed_at.csv' table='[processed_at#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='real' name='Pos' ordinal='1' />
+              <column datatype='string' name='Team' ordinal='2' />
+              <column datatype='integer' name='GP' ordinal='3' />
+              <column datatype='integer' name='W' ordinal='4' />
+              <column datatype='integer' name='L' ordinal='5' />
+              <column datatype='integer' name='GF' ordinal='6' />
+              <column datatype='integer' name='GA' ordinal='7' />
+              <column datatype='integer' name='GD' ordinal='8' />
+              <column datatype='integer' name='Pts' ordinal='9' />
+              <column datatype='string' name='Conference' ordinal='10' />
+              <column datatype='integer' name='Year' ordinal='11' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Club]' value='[processed_ap.csv].[Club]' />
+          <map key='[Conference]' value='[processed_at.csv].[Conference]' />
+          <map key='[F1]' value='[processed_at.csv].[F1]' />
+          <map key='[GA]' value='[processed_at.csv].[GA]' />
+          <map key='[GD]' value='[processed_at.csv].[GD]' />
+          <map key='[GF]' value='[processed_at.csv].[GF]' />
+          <map key='[GP]' value='[processed_at.csv].[GP]' />
+          <map key='[L]' value='[processed_at.csv].[L]' />
+          <map key='[Pos]' value='[processed_at.csv].[Pos]' />
+          <map key='[Pts]' value='[processed_at.csv].[Pts]' />
+          <map key='[SHTS]' value='[processed_ap.csv].[SHTS]' />
+          <map key='[SOG]' value='[processed_ap.csv].[SOG]' />
+          <map key='[Team]' value='[processed_at.csv].[Team]' />
+          <map key='[W]' value='[processed_at.csv].[W]' />
+          <map key='[Year (processed_at.csv)]' value='[processed_at.csv].[Year]' />
+          <map key='[Year]' value='[processed_ap.csv].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[processed_ap.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Club</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Club]</local-name>
+            <parent-name>[processed_ap.csv]</parent-name>
+            <remote-alias>Club</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_ap.csv_3AC27890AD984CD7B3255E1C50B4AC42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[processed_ap.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_ap.csv_3AC27890AD984CD7B3255E1C50B4AC42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SHTS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SHTS]</local-name>
+            <parent-name>[processed_ap.csv]</parent-name>
+            <remote-alias>SHTS</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_ap.csv_3AC27890AD984CD7B3255E1C50B4AC42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SOG</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SOG]</local-name>
+            <parent-name>[processed_ap.csv]</parent-name>
+            <remote-alias>SOG</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_ap.csv_3AC27890AD984CD7B3255E1C50B4AC42]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pos</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Pos]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>Pos</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Team]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>Team</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GP]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>GP</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>W</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[W]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>W</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>L</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[L]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>L</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GF</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GF]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>GF</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GA</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GA]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>GA</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GD]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>GD</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pts</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pts]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>Pts</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Conference</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Conference]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>Conference</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (processed_at.csv)]</local-name>
+            <parent-name>[processed_at.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Teams' datatype='string' name='[Club]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[GP]' role='measure' type='quantitative' />
+      <column caption='Shts' datatype='integer' name='[SHTS]' role='measure' type='quantitative' />
+      <column caption='Years' datatype='integer' name='[Year (processed_at.csv)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='processed_ap.csv' datatype='table' name='[__tableau_internal_object_id__].[processed_ap.csv_3AC27890AD984CD7B3255E1C50B4AC42]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='processed_at.csv' datatype='table' name='[__tableau_internal_object_id__].[processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8]' role='measure' type='quantitative' />
+      <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[GP]' derivation='Sum' name='[sum:GP:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='310' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Year:ok]' palette='tableau20_10_0' type='palette'>
+            <map to='#499894'>
+              <bucket>2009</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1996</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2005</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>2013</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>2010</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>2006</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1997</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>2017</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>2007</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>2014</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>2015</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>2018</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2011</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>2008</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2000</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>2016</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>2012</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2004</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:GP:ok]' palette='winter_10_0' type='palette'>
+            <map to='#90728f'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#b9a0b4'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#ff9888'>
+              <bucket>34</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='processed_ap.csv' id='processed_ap.csv_3AC27890AD984CD7B3255E1C50B4AC42'>
+            <properties context=''>
+              <relation connection='textscan.089u50u1he3j4l17vbuz80xvn2dl' name='processed_ap.csv' table='[processed_ap#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='Club' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='integer' name='SHTS' ordinal='2' />
+                  <column datatype='integer' name='SOG' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='processed_at.csv' id='processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8'>
+            <properties context=''>
+              <relation connection='textscan.1aler1x01eku7w13dcafe10lfmwe' name='processed_at.csv' table='[processed_at#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='real' name='Pos' ordinal='1' />
+                  <column datatype='string' name='Team' ordinal='2' />
+                  <column datatype='integer' name='GP' ordinal='3' />
+                  <column datatype='integer' name='W' ordinal='4' />
+                  <column datatype='integer' name='L' ordinal='5' />
+                  <column datatype='integer' name='GF' ordinal='6' />
+                  <column datatype='integer' name='GA' ordinal='7' />
+                  <column datatype='integer' name='GD' ordinal='8' />
+                  <column datatype='integer' name='Pts' ordinal='9' />
+                  <column datatype='string' name='Conference' ordinal='10' />
+                  <column datatype='integer' name='Year' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='AND'>
+              <expression op='='>
+                <expression op='[Year]' />
+                <expression op='[Year (processed_at.csv)]' />
+              </expression>
+              <expression op='='>
+                <expression op='[Club]' />
+                <expression op='[Team]' />
+              </expression>
+            </expression>
+            <first-end-point object-id='processed_ap.csv_3AC27890AD984CD7B3255E1C50B4AC42' />
+            <second-end-point object-id='processed_at.csv_D08B6648A95A477B9C3765A1EB52AEC8' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_40533F005BB04029B54CD9715FB33CEE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Supporter&apos;s Shield' type='sheet' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Year' />
+        <param name='target' value='Supporter&apos;s Shield' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Goal Differential'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Goal Differential for League Champions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_ap.csv+ (Multiple Connections)' name='federated.0kzrldc0ippd4m19wlc1s0dvb7zt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kzrldc0ippd4m19wlc1s0dvb7zt'>
+            <column datatype='integer' name='[GD]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[GP]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column caption='Years' datatype='integer' name='[Year (processed_at.csv)]' role='dimension' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year (processed_at.csv)]' derivation='None' name='[none:Year (processed_at.csv):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[GD]' derivation='Sum' name='[sum:GD:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GP]' derivation='Sum' name='[sum:GP:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GD:qk]' scope='cols' value='Goal Differential' />
+            <format attr='auto-subtitle' class='0' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GD:qk]' scope='cols' value='false' />
+            <format attr='subtitle' class='0' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GD:qk]' scope='cols' value='Goals For - Goals Against' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GP:ok]' value='Games Played' />
+          </style-rule>
+          <style-rule element='data-highlighter'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='data-highlighter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GP:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk] / [federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year (processed_at.csv):ok])</rows>
+        <cols>[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GD:qk]</cols>
+      </table>
+      <simple-id uuid='{B49AAAAB-D594-486E-88C3-98BD1E8EBCFB}' />
+    </worksheet>
+    <worksheet name='Shooting Percentage'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Shooting Percentage for League Champions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_ap.csv+ (Multiple Connections)' name='federated.0kzrldc0ippd4m19wlc1s0dvb7zt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kzrldc0ippd4m19wlc1s0dvb7zt'>
+            <column caption='[GF]/[Shts]' datatype='real' name='[Calculation_933089589421019137]' role='measure' type='quantitative' user:unnamed='Shooting Percentage'>
+              <calculation class='tableau' formula='[GF]/[SHTS]' />
+            </column>
+            <column datatype='integer' name='[GF]' role='measure' type='quantitative' />
+            <column caption='Shts' datatype='integer' name='[SHTS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_933089589421019137]' derivation='Sum' name='[sum:Calculation_933089589421019137:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Team:nk]' />
+              <groupfilter function='member' level='[none:Team:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='897' />
+            <format attr='text-format' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:Calculation_933089589421019137:qk]' value='p0%' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:Calculation_933089589421019137:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:Calculation_933089589421019137:qk]' />
+              <text column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:Calculation_933089589421019137:qk]' />
+              <text column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]' />
+              <color column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:ok]' />
+              <text column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DA8E112F-1113-4624-8CBC-07EFF25FED00}' />
+    </worksheet>
+    <worksheet name='Team Shots'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_ap.csv+ (Multiple Connections)' name='federated.0kzrldc0ippd4m19wlc1s0dvb7zt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kzrldc0ippd4m19wlc1s0dvb7zt'>
+            <column caption='Shts' datatype='integer' name='[SHTS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SHTS]' derivation='Sum' name='[sum:SHTS:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Team:nk]' />
+              <groupfilter function='member' level='[none:Team:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:SHTS:qk]' scope='cols' value='Shots' />
+            <encoding attr='space' class='0' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:SHTS:qk]' field-type='quantitative' max='600' min='200' range-type='fixed' scope='cols' type='space' />
+            <format attr='border-color' value='#b0b0b0' />
+            <format attr='border-width' value='1' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]' value='#000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:SHTS:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='legend'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]</rows>
+        <cols>[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:SHTS:qk]</cols>
+      </table>
+      <simple-id uuid='{40EA8FA3-163A-486D-8A7D-DBCFB29FE207}' />
+    </worksheet>
+    <worksheet name='Team Shots on Goal'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='processed_ap.csv+ (Multiple Connections)' name='federated.0kzrldc0ippd4m19wlc1s0dvb7zt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kzrldc0ippd4m19wlc1s0dvb7zt'>
+            <column datatype='integer' name='[SOG]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Team]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Team]' derivation='None' name='[none:Team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[SOG]' derivation='Sum' name='[sum:SOG:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Team:nk]' />
+              <groupfilter function='member' level='[none:Team:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <alphabetic-sort column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]' direction='ASC' />
+          <slices>
+            <column>[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:SOG:qk]' scope='cols' value='true' />
+            <encoding attr='space' class='0' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:SOG:qk]' field-type='quantitative' max='260' min='80' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]' value='true' />
+          </style-rule>
+          <style-rule element='data-highlighter-title'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.8790607452392578' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]</rows>
+        <cols>[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:SOG:qk]</cols>
+      </table>
+      <simple-id uuid='{A92A9EAB-84A1-4891-B1FF-C67769722C54}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Supporter&apos;s Shield'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='50404' id='7' param='horz' type-v2='layout-flow' w='99152' x='424' y='929'>
+            <zone h='50404' id='5' type-v2='layout-basic' w='99152' x='424' y='929'>
+              <zone h='25202' id='11' name='Team Shots on Goal' w='41878' x='57698' y='26131'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='50404' id='12' name='Goal Differential' w='48270' x='424' y='929'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24038' id='13' leg-item-layout='grid' name='Goal Differential' pane-specification-id='0' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GP:ok]' type-v2='color' w='9004' x='48694' y='929'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='26366' id='14' name='Goal Differential' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]' type-v2='highlighter' w='9004' x='48694' y='24967'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='25202' id='9' name='Team Shots' w='41878' x='57698' y='929'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='47738' id='15' name='Shooting Percentage' w='99152' x='424' y='51333'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f9f3ef' />
+          </zone-style>
+        </zone>
+        <zone fixed-size='443' h='50058' id='10' is-fixed='true' leg-item-layout='vert' name='Team Shots' pane-specification-id='0' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:ok]' type-v2='color' w='8898' x='48623' y='48780' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98142' id='16' param='vert' type-v2='layout-flow' w='99034' x='483' y='929'>
+                <zone fixed-size='280' h='47155' id='9' is-fixed='true' name='Team Shots' w='44686' x='483' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='40651' id='10' leg-item-layout='vert' name='Team Shots' pane-specification-id='0' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:ok]' type-v2='color' w='9656' x='89861' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='47155' id='11' is-fixed='true' name='Team Shots on Goal' w='44692' x='45169' y='929'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6504' id='14' name='Goal Differential' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Team:nk]' type-v2='highlighter' w='9656' x='89861' y='41580'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50987' id='12' is-fixed='true' name='Goal Differential' w='44686' x='483' y='48084'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='50987' id='13' name='Goal Differential' pane-specification-id='0' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GP:ok]' type-v2='color' w='9657' x='45169' y='48084'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='50987' id='15' is-fixed='true' name='Shooting Percentage' w='44691' x='54826' y='48084'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{777E92B5-D33E-4B6E-8373-52B84483199A}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' show-side-pane='false' source-height='37'>
+    <window class='worksheet' name='Goal Differential'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[sum:GP:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{32042270-53C8-4931-ACA0-773BBCFA2080}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Supporter&apos;s Shield'>
+      <viewpoints>
+        <viewpoint name='Goal Differential'>
+          <zoom type='fit-height' />
+        </viewpoint>
+        <viewpoint name='Shooting Percentage' />
+        <viewpoint name='Team Shots'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Team Shots on Goal'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='9' />
+      <simple-id uuid='{282F7B98-476E-46CF-AA68-43A0DE1A76CD}' />
+    </window>
+    <window class='worksheet' name='Team Shots'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{91DBDFE3-1CCB-402C-BF48-7562F6F6932F}' />
+    </window>
+    <window class='worksheet' name='Team Shots on Goal'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E5DB206F-4CD0-4BF3-82EC-7AEA036526A0}' />
+    </window>
+    <window class='worksheet' name='Shooting Percentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kzrldc0ippd4m19wlc1s0dvb7zt].[none:Year:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FE78A836-40C9-4F60-931B-B7B84C86BD2C}' />
+    </window>
+  </windows>
+</workbook>
