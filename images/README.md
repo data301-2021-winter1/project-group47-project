@@ -1,3 +1,4 @@
 # Images Folder
 
-- `images` - You can place all images here to keep the repository clean. To see how to use images, refer to the main `README.md` in the root directory.
+- `Dashboard` is an image of my current dashboard.
+- `Logo` is an image of the MLS official logo.
