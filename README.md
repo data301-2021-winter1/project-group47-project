@@ -26,6 +26,6 @@ We hope to be able to better interpet and appreciate the statistics of the MLS. 
 ## References
 
 dataset: https://www.kaggle.com/josephvm/major-league-soccer-dataset
-
+MLS logo: https://logos-download.com/19123-major-league-soccer-logo-download.html
 
 
