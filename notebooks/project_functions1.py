@@ -47,6 +47,7 @@ def load_and_process_players(df):
            )
     df4 = df4[df4['SHTS'] > 200]
     df4.rename(columns = {'Club':'Team'}, inplace = True)
+    df4['SOG%'] = df4['SOG']/df4['SHTS'] * 100
     return df4
 
 
