@@ -20,9 +20,8 @@ We hope to be able to better interpet and appreciate the statistics of the MLS. 
 
 
 ## Images
-
+<img src ="images/Dashboard.png" width="1000px">
 <img src ="images/Logo.png" width="400px">
-<img src ="images/Dashboard.png" width="400px">
 
 ## References
 
