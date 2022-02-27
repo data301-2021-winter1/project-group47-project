@@ -1,11 +1,6 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=5893722&assignment_repo_type=AssignmentRepo)
 # Group 47 - MLS Goals and Shots
 
-
-## Milestones
-
-Details for Milestone are available on Canvas (left sidebar, Course Project) or [here](https://firas.moosvi.com/courses/data301/project/milestone01.html).
-
 ## Describe your topic/interest in about 150-200 words
 This data was found on Kaggle and was provided by Joseph Kohr. He scrapped data from the Major League Soccer website for player data and fbref, a statistics site dedicated to both women's and men's soccer competitions. Data was also taken from espn and wikipedia and it contains all matches, goalscorers, teams and players from 1996 to now. The dataset also includes all statistics relevant to the games, year, and players. Kohr scrapped the data using code. 
 ## Describe your dataset in about 150-200 words
